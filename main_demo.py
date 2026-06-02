@@ -113,7 +113,7 @@ def normalize_names(names) -> list:
     return result
 
 
-async def fake_api_call(payload, retries=3, timeout=30):
+async def fake_api_call(payload, retries=3):
     response = None
     for i in range(retries):
         try:
